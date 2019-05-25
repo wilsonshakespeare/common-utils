@@ -35,10 +35,17 @@
     "react-dom": "^16.8.6"
   },
   "version": "1.0.0",
-  "main": "src/index.js",
-  "author": "business.sern@gmail.com",
-  "description": "",
+  "main": "./lib/index.js",
+  "author": "Wilson Lim <business.sern@gmail.com>",
+  "description": "Common Utils For React and Regular Javascript Utils",
   "files": [
     "lib"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonshakespeare/common-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wilsonshakespeare/common-utils/issues"
+  }
 }
