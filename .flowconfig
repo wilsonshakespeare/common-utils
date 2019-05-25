@@ -1,0 +1,19 @@
+[ignore]
+.*/docz/.*
+.*/node_modules/.*
+.*/flow-typed/.*
+.*/lib/.*
+
+[include]
+
+[libs]
+flow-typed/
+
+[options]
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.json
+module.file_ext=.scss
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+
+

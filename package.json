@@ -1,0 +1,44 @@
+{
+  "name": "@shakespeare/common-utils",
+  "license": "MIT",
+  "scripts": {
+    "prepack": "npm run prepack:babel && npm run prepack:flow",
+    "prepack:babel": "babel src/ -d lib",
+    "prepack:flow": "flow-copy-source src lib",
+    "flow": "flow --show-all-errors"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-flow-strip-types": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-flowtype": "^3.6.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "flow-bin": "^0.97.0",
+    "flow-copy-source": "^2.0.6",
+    "flow-typed": "^2.5.1",
+    "jest": "^24.7.1",
+    "prettier-eslint": "^8.8.2",
+    "webpack": "^4.29.3"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "business.sern@gmail.com",
+  "description": "",
+  "files": [
+    "lib"
+  ]
+}

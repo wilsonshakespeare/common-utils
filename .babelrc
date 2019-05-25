@@ -1,0 +1,5 @@
+{
+  "presets": ["@babel/preset-flow", "@babel/preset-env"],
+  "plugins": ["@babel/transform-flow-strip-types"],
+  "retainLines": true
+}

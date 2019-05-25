@@ -1,0 +1,62 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["airbnb", "plugin:flowtype/recommended"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest":true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "classes": true
+        }
+    },
+    "plugins": [
+        "react",
+        "flowtype",
+        "jsx-ally",
+        "import"
+    ],
+    "globals": {
+        "module": false
+    },
+    "rules": {
+        "no-console": "off",
+        "no-plusplus": "off",
+        "no-mixed-operators": 0,
+        "jsx-a11y/label-has-for": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "jsx-a11y/no-interactive-element-to-noninteractive-role": "off",
+        "react/jsx-no-literals": [
+            1,
+            {"noStrings": false}
+        ],
+        "lines-between-class-members": [
+            "error",
+            "always",
+            { 
+                "exceptAfterSingleLine": true
+            }
+        ],
+        "spaced-comment": [
+            "error",
+            "always",
+            {
+                "exceptions": [
+                    "/"
+                ]
+            }
+        ],
+        "import/no-extraneous-dependencies": ["error",
+            {
+                "devDependencies": [
+                    "jest.setup.js"
+                ]
+            }
+        ]
+
+    }
+}
